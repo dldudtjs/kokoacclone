@@ -1,0 +1,41 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /**/
+    background-color: #FAF9FA;
+    padding: 20px 50px;
+    border-top: 1px solid rgb(121, 121, 121, 0.3);
+
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    position: relative;
+    color: #2C2A30;
+}
+
+.nav__notification { /*chat icon 옆에 숫자 아이콘에 대한 설정*/
+    background-color: tomato;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+    position: absolute;/*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
+    left: 12px;
+    top: -2px;
+}
+.nav__information {
+    color: tomato;
+    font-size: 14px;
+    position: absolute;/*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
+    left: 16px;
+    top: -5px;
+}

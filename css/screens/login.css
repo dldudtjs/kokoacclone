@@ -1,0 +1,59 @@
+
+/*welcome-header.css*/
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*.welcome-header__title 이렇게 쓰는 방식을 BEM 방식이라고 함*/
+  .welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .welcome-header__text {
+    width: 80%;
+    opacity: 0.7;
+  }
+  
+  /*login-form.css*/
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+  }
+  #login-form input {
+    border: none;
+    padding: 20px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  #login-form input:not([type="submit"]) {
+    /*type이 submit이 아닐때 밑의 내용을 적용함*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  #login-form input:focus {
+    border-color: var(--yello);
+  }
+  
+  #login-form input[type="submit"] {
+    /*background-color: var(--yello);*/
+    cursor: pointer; /*커서를 위에 가져다 놓았을 때 커서모양이 pointer로 바뀜*/
+    /*padding: 20px 0px; 따로 padding을 안 줘도 적용돼있음(위에서 안 빼준거같음)*/
+      border-radius: 5px;
+  }
+  
+  #login-form a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: inherit; /*inherit = 부모에게 상속받아옴, -> 부모에게서 색을 상속받아옴 */
+  }
