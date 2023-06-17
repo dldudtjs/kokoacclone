@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fa-solid fa-plane"></i>  
+        <i class="fa-solid fa-plane"></i>
       </div>
       <div class="status-bar__column">
         <span>00:00</span>
@@ -26,17 +26,22 @@
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
       <p class="welcome-header__text">
-        If you have a Kokoa Account,<br>
+        If you have a Kokoa Account,<br />
         log in with your email or phone number.
       </p>
     </header>
 
-    <form action="friends.html" method="get" id="login-form"> <!-- method="get" 은 서버가 없을 때 사용하는 방식, 단 보안이 안됨-->
+    <form action="friends.html" method="get" id="login-form">
+      <!-- method="get" 은 서버가 없을 때 사용하는 방식, 단 보안이 안됨-->
       <input name="username" type="text" placeholder="Email or phone number" />
       <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In">
+      <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅜㅜ</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/23377742e5.js"

@@ -1,31 +1,58 @@
 .nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box; /**/
-    background-color: #FAF9FA;
-    padding: 20px 50px;
-    border-top: 1px solid rgb(121, 121, 121, 0.3);
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; /**/
+  background-color: #faf9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgb(121, 121, 121, 0.3);
 }
 .nav__list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav__link {
-    position: relative;
-    color: #2C2A30;
+  position: relative;
+  color: #2c2a30;
 }
 
-.nav__notification { /*chat icon 옆에 숫자 아이콘에 대한 설정*/
-    position: absolute;/*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
-    left: 12px;
-    top: -2px;
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  /*chat icon 옆에 숫자 아이콘에 대한 설정*/
+  position: absolute; /*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
+  left: 12px;
+  top: -2px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 .nav__information {
-    color: tomato;
-    font-size: 14px;
-    position: absolute;/*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
-    left: 16px;
-    top: -5px;
+  color: #e64e9f;
+  font-size: 14px;
+  position: absolute; /*숫자 아이콘이 채팅 아이콘 위에 위치하게함*/
+  left: 16px;
+  top: -5px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.nav__btn {
+  animation: appearBtnAnimation 0.5s ease-in-out;
 }

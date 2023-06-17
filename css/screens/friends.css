@@ -26,3 +26,34 @@
 .friends-screen__channel-header {
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* 인트로화면에 애니메이션을 줌 */
+@keyframes hideSplaschScreen { 
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;  /* 인트로 화면이 화면에 걸리지 않게 빠짐 */
+  }
+}
+
+#splash-screen {
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplaschScreen 0.3s ease-in-out forwards; /*forwards = 마지막 keyframes를 기억하여 원래 상태로 돌아가는 것을 방지 */
+  animation-delay: 2s;
+}
+
+#splash-screen img {
+  height: 120px;
+  width: 150px;
+}
+

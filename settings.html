@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - kokoa clone</title>
+    <title>Settings - kokoa clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,57 +23,44 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <!-- -->
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span><i class="fa-solid fa-comments fa-lg"></i></span>
-        <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span
-          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
-        ></span>
       </div>
     </header>
 
     <main class="main-screen">
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://i.pinimg.com/564x/d7/36/d2/d736d2efa7706db7527b3ce68a2dbd2b.jpg"
-              class="user-component__avatar user-component__avatar"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title">Channel</h4>
-              <h6 class="user-component__subtitle">
-                Please check My KoKoa Account Info
-              </h6>
-            </div>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__time">11:11</span>
-            <div class="badge">1</div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>KaKao Lab</span>
           </div>
-        </div>
-      </a>
-      <div class="user-component">
-        <!--나의 프로필-->
-        <div class="user-component__column">
-          <img
-            src="https://i.pinimg.com/564x/11/05/8b/11058b2e39127705bae44c13b68c9e89.jpg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">yeongseon</h4>
-            <h6 class="user-component__subtitle">Photo</h6>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Version</span>
           </div>
-        </div>
-        <div class="user-component__column user-yeongseon">
-          <span class="user-component__time">05:28</span>
-          <div class="badge"></div>
-        </div>
-      </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
     </main>
 
     <nav class="nav">
@@ -86,7 +73,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-solid fa-comment fa-lg"></i>
+            <i class="far fa-comment fa-lg"></i>
           </a>
         </li>
         <li class="nav__btn">

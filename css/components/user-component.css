@@ -1,11 +1,16 @@
 .user-component {
-  justify-content: space-between; /*Channel과 2> 양끝으로 분리*/
+  justify-content: space-between;
+  margin-bottom: 25px; /*Channel과 2> 양끝으로 분리*/
 }
 
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.user-yeongseon div {
+  background-color: white;
 }
 
 .user-component__avatar {
